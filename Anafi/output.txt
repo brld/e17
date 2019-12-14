@@ -1,0 +1,52 @@
+Debugging log when attempting to interface with the drone's IP address via. an Ubuntu 16.04 VM
+
+26/11/2019 18:02:04.126073	Info        _create_pomp_loop               Creating pomp loop
+26/11/2019 18:02:04.126538	Info        _create_manager                 New manager has been created!
+26/11/2019 18:02:04.126684	Info        _create_manager                 Manager device callbacks has been added to the manager
+26/11/2019 18:02:04.126884	Info        _create_net_backend             New net backend has been created
+26/11/2019 18:02:04.127016	Info        _create_net_backend             Set backend socket callback OK
+26/11/2019 18:02:04.127483	Info        _create_pomp_loop               Creating pomp loop
+26/11/2019 18:02:04.128183	Info        _create_pomp_loop               Creating pomp loop
+26/11/2019 18:02:04.128832	Info        create_timer                    Creating pomp timer
+26/11/2019 18:02:04.128988	Info        create_timer                    Creating pomp timer
+26/11/2019 18:02:04.129849	Info        _start_net_discovery            Net discovery object has been created
+26/11/2019 18:02:04.130224	Info        _backend_socket_cb              backend_pointer <olympe_deps.LP_struct_arsdkctrl_backend_net object at 0x7f1ea5026bf8> socket_fd 20 socket_kind 0 userdate_pointer None
+26/11/2019 18:02:04.130693	Info        _start_net_discovery            Net discovery has been started
+26/11/2019 18:02:04.156005	Info        _device_added_cb                New device has been detected
+26/11/2019 18:02:04.156270	Info        _device_added_cb                {'state': 0}
+26/11/2019 18:02:04.166688	Info        _backend_socket_cb              backend_pointer <olympe_deps.LP_struct_arsdkctrl_backend_net object at 0x7f1ea4f9d378> socket_fd 23 socket_kind 2 userdate_pointer None
+26/11/2019 18:02:04.167068	Info        _backend_socket_cb              backend_pointer <olympe_deps.LP_struct_arsdkctrl_backend_net object at 0x7f1ea4f9d378> socket_fd 24 socket_kind 1 userdate_pointer None
+26/11/2019 18:02:04.167540	Info        _connecting_cb                  Connecting to device: ANAFI-G039536
+26/11/2019 18:02:04.167765	Info        _connect_to_device              Connection in progress...
+26/11/2019 18:02:04.191214	Info        _connected_cb                   Connected to device: ANAFI-G039536
+26/11/2019 18:02:04.191640	Info        _connected_cb                   {'json': {'c2d_port': 2233,
+          'c2d_update_port': 51,
+          'c2d_user_port': 21,
+          'proto_v': 1,
+          'qos_mode': 0,
+          'status': 0},
+ 'state': 0}
+26/11/2019 18:02:04.191922	Info        _create_command_interface       Command interface has been created: itf=<olympe_deps.LP_struct_arsdk_cmd_itf object at 0x7f1ea4f9d1e0>
+26/11/2019 18:02:12.191805	Info        _link_status_cb                 Link status: 0
+26/11/2019 18:02:12.192353	Info        _disconnected_cb                Disconnected from device: ANAFI-G039536
+26/11/2019 18:02:12.192698	Info        _device_removed_cb              Device has been removed
+26/11/2019 18:02:12.193191	Info        _stop_discovery                 Discovery has been stopped
+26/11/2019 18:02:12.193402	Info        _stop_discovery                 Discovery object has been destroyed
+26/11/2019 18:02:12.198809	Info        _stop_discovery                 No discovery instance to be stopped
+26/11/2019 18:02:12.200557	Error       _send_command                   Common.Common.AllStates: Warning some callbacks weren't called: common.CommonState.AllStatesChanged()
+
+26/11/2019 18:02:12.203935	Info        _stop_discovery                 No discovery instance to be stopped
+26/11/2019 18:02:22.207844	Error       _send_command                   Common.Settings.AllSettings: Warning some callbacks weren't called: common.SettingsState.AllSettingsChanged()
+
+26/11/2019 18:02:22.210109	Info        _send_command                   Ardrone3.Piloting.TakeOff(): has been sent asynchronously
+26/11/2019 18:02:32.230320	Info        _send_command                   Ardrone3.Piloting.MoveBy(c_double(3.0), c_double(0.0), c_double(0.0), c_double(0.0)): has been sent asynchronously
+26/11/2019 18:02:52.280649	Info        _send_command                   Ardrone3.Piloting.MoveBy(c_double(-3.0), c_double(0.0), c_double(0.0), c_double(0.0)): has been sent asynchronously
+26/11/2019 18:03:12.330508	Info        _send_command                   Ardrone3.Piloting.Landing(): has been sent asynchronously
+26/11/2019 18:03:22.415826	Info        _destroy_pomp_loop              Pomp loop has been destroyed
+26/11/2019 18:03:22.416296	Info        _destroy_pomp_loop              Pomp loop has been destroyed
+26/11/2019 18:03:22.429807	Info        _stop_discovery                 No discovery instance to be stopped
+26/11/2019 18:03:22.431148	Info        _destroy_net_backend            Net backend has been destroyed
+26/11/2019 18:03:22.431412	Info        _destroy_manager                Manager has been destroyed
+26/11/2019 18:03:22.431646	Info        destroy_timer                   Pomp loop timer has been destroyed
+26/11/2019 18:03:22.431841	Info        destroy_timer                   Pomp loop timer has been destroyed
+26/11/2019 18:03:22.432014	Info        _destroy_pomp_loop              Pomp loop has been destroyed
